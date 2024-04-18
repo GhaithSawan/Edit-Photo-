@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #333;
+
+
+}
+
+.continer {
+    background-color: #222;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    padding: 15px 15px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.photo img,canvas {
+    max-width: 45vw;
+    max-height: 60vh;
+}
+
+.uplode input {
+    display: none;
+}
+
+.uplode label {
+    color: aliceblue;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+}
+
+
+.filter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    direction: rtl;
+}
+
+.filter li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter label {
+    color: #fff;
+
+}
+
+.filter ul li:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filter a,
+.filter span {
+    background: #060;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:650px) {
+    .continer {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .photo img,canvas {
+        max-width: 80vh;
+    }
+    
+
+}
